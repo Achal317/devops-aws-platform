@@ -10,9 +10,9 @@ on:
 jobs:
   first-build-jobs:
     runs-on: ubuntu-latest
-    steps :
-      -name : "Docker version check"
-       run: docker --version
+    steps:
+      - name: "Docker version check"
+        run: docker --version
 
 
 
