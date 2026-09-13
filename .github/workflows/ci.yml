@@ -1,0 +1,22 @@
+name : First Workflow script 
+
+on:
+  push:
+    branches:
+      - main
+
+
+
+jobs:
+  first-build-jobs:
+    runs-on: ubuntu-latest
+    steps :
+      -name : "Docker version check"
+       run: docker --version
+
+
+
+
+
+
+
