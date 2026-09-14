@@ -17,6 +17,9 @@ jobs:
       - name: "Docker Image build"
         run: docker image build -t flask-app:v1 -f app/Dockerfile app/
 
+      - name: "Docker container run"
+        run: docker container run -d --name flaskapp -p 5000:5000 flask-app:v1
+
 
 
 
