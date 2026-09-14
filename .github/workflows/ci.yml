@@ -11,8 +11,11 @@ jobs:
   first-build-jobs:
     runs-on: ubuntu-latest
     steps:
-      - name: "Docker version check"
-        run: docker --version
+      - name: "Repo files checkout"
+        uses: actions/checkout@v4
+
+      - name: "Docker Image build"
+        run: docker image build -t flask-app:v1 -f app/Dockerfile app/
 
 
 
