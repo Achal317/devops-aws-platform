@@ -2,6 +2,8 @@ FROM python:3.11-alpine
 
 WORKDIR /var/flask
 
+RUN apk add --no-cache curl
+
 RUN adduser --disabled-password --home /var/flask/ appuser
 
 COPY requirements.txt .
