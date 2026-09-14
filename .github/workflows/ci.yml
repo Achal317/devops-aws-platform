@@ -23,6 +23,9 @@ jobs:
       - name: "Docker container check"
         run : docker container ls -a
 
+      - name: "Check container logs"
+        run: docker logs flaskapp
+
       - name: "Check the flask app status"
         run: ./app/check.sh
 
