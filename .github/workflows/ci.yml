@@ -20,6 +20,9 @@ jobs:
       - name: "Docker container run"
         run: docker container run -d --name flaskapp -p 5000:5000 flask-app:v1
 
+      - name: "Check the flask app status"
+        run: ./app/check.sh
+
 
 
 

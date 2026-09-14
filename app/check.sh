@@ -1,7 +1,7 @@
-#! /bin/bash	
+#! /bin/bash
 
-URLS=("http://3.109.213.46:5000/"
-	"http://3.109.213.46:5000/health")
+URLS=("http://localhost:5000/"
+        "http://localhost:5000/health")
 
 
 
@@ -19,8 +19,8 @@ if [[ "$Status_code" == "200" ]]; then
     echo " Server is responding OK."
 
 else
-	echo "Server returned status: $Status_code"
-	exit 1
+        echo "Server returned status: $Status_code"
+        exit 1
 
 fi
 done
