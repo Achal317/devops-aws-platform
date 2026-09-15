@@ -1,4 +1,3 @@
-[root@Application-project workflows]# cat ci.yml
 name : First Workflow script
 
 on:
